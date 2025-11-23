@@ -40,4 +40,5 @@ param (
 # get script path 
 $ScriptPath = split-path $SCRIPT:MyInvocation.MyCommand.Path -parent
 . "$ScriptPath\Utils.ps1"
+
 Debug-Service_Interal -windbg $windbg -timeout $timeout -serviceName "FrameServer" -forceStart:$forcestart
